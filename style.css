@@ -1,0 +1,177 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/images\ \(5\).jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle{
+    position: relative;
+	height: 100%;
+	width: 90%;
+    margin-top: 3%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    box-shadow: 2px 2px 25px 30px rgba(243, 114, 114, 0.5) ;
+	background: rgba(54, 54, 54, 0.377) url('../img/qua.gif');
+	background-blend-mode: color-burn;
+	background-size: cover;
+    background-position: center;
+}
+.middle img{
+    margin: 55px 10px;
+	height: 350px;
+	width: 350px;
+	border-radius: 1500px;
+	box-shadow: 2px 2px 25px 30px rgba(243, 114, 114, 0.5);
+}
+input[type="range"] {
+	-webkit-appearance: none;
+	width: 25%;
+	outline: none;
+	height: 2px;
+	margin: 0 15px;
+}
+input[type="range"]::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	height: 20px;
+	width: 20px;
+	background: rgb(243, 114, 114);
+	border-radius: 50%;
+	cursor: pointer;
+}
+.middle .volume{
+	margin-bottom: 15px;
+	width: 100%;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(4, 0, 65);
+}
+.middle .volume i{
+	cursor: pointer;
+	padding: 8px 12px;
+	background: rgb(243, 114, 114);
+    width: 20px;
+    height: 20px;
+	border-radius: 50px;
+	box-shadow: 2px 2px 25px 5px rgba(243, 114, 114, 0.5);
+}
+.middle .volume i:hover{
+	background: rgba(0, 23, 155, 0.2);
+	color: rgb(243, 114, 114);
+}
+.middle .bottom{
+	width: 100%;
+	height: 150px;
+	background: rgba(245,245,245,0.2);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 2px 2px 25px 15px rgba(243, 114, 114, 0.5) inset;
+}
+.middle button{
+	border: 5px;
+	border-color: rgba(243, 114, 114, 0.5);
+	height: 50px;
+	width: 50px;
+	color: rgb(4, 0, 65);
+	background: rgba(245,245,245,0.2);
+	box-shadow: 2px 2px 25px 5px rgba(243, 114, 114, 0.5) inset;
+}
+.middle button:hover{
+	background: rgba(0, 23, 155, 0.2);
+	color: rgb(243, 114, 114);
+	box-shadow: 2px 2px 25px 5px rgba(0, 23, 155, 0.2) inset;
+}
+#myProgressBar{
+	width: 90%;
+	margin: 10px 0;
+}
+.icons{
+	margin-top: 17px;
+	cursor: pointer;
+}
+.icons i:hover{
+	color: rgb(243, 114, 114);
+}
+.songItem{
+	display: flex;
+	width: 50%;
+	justify-content: center;
+}
+.SName{
+	margin: 0px 10px ;
+	font-size: 20px;
+}
+.timestamp{
+	margin: 0px 5px;
+}
+.noName{
+	justify-content: left;
+}
+.p1{
+	opacity: 0;
+}
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	background: rgba(0, 0, 0, 0.7) url('img/images\ \(5\).jpeg');
+	color: whitesmoke;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 50px;
+	position: absolute;
+	z-index: 1;
+	width: 220px;
+    top: 80%;
+    left: 50%;
+	margin-top: 25px;
+    margin-left: -110px;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+@media only screen and (max-width: 400px){
+	.middle img{
+		margin: 55px 10px;
+		height: 250px;
+		width: 250px;
+		border-radius: 1500px;
+		box-shadow: 2px 2px 25px 30px rgba(243, 114, 114, 0.5);
+	}
+}
+@media only screen and (max-width: 265px){
+	.middle img{
+		margin: 55px 10px;
+		height: 200px;
+		width: 200px;
+		border-radius: 1500px;
+		box-shadow: 2px 2px 25px 30px rgba(243, 114, 114, 0.5);
+	}
+}
+@media only screen and (min-height: 1000px){
+	.middle{
+		margin-top: 10%;	
+	}
+}
